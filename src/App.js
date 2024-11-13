@@ -141,11 +141,11 @@ function App() {
             <a href={mailId} target="_blank" className="btn" rel="noreferrer">Let's Talk</a>
           </div>
           <div className="home-social">
-            <a href="#github"><FaGithub className="bx bxl-github" /></a>
-            <a href="#linkedin"><FaLinkedin className="bx bxl-linkedin-square" /></a>
-            <a href="#twitter"><FaTwitter className="bx bxl-twitter" /></a>
-            <a href="#facebook"><FaFacebookF className="bx bxl-facebook" /></a>
-            <a href="#instagram"><FaInstagram className="bx bxl-instagram" /></a>
+            <a href="https://github.com/UzairMohammed7" target="_blank" rel="noreferrer"> <FaGithub className="bx bxl-github" /> </a>
+            <a href="https://www.linkedin.com/in/mohammed-uzair-mu/" target="_blank" rel="noreferrer" ><FaLinkedin className="bx bxl-linkedin-square" /></a>
+            <a href="https://x.com/uzairmohammed71" target="_blank" rel="noreferrer"><FaTwitter className="bx bxl-twitter" /></a>
+            <a href="https://www.facebook.com/uzair.mohd.37/" target="_blank" rel="noreferrer"><FaFacebookF className="bx bxl-facebook" /></a>
+            <a href="https://www.instagram.com/uzair_mohammed_0_0/" target="_blank" rel="noreferrer"><FaInstagram className="bx bxl-instagram" /></a>
           </div>
         </div>
         <img className="home-imgHover" src={webImage} alt="dev-image" />
@@ -247,7 +247,9 @@ function App() {
                    <img src={webImage} alt="Project-1"/> 
                    <div class="project-info">
                        <h3>Your Dream job</h3>
-                       <p>Search For a Job.</p>
+                       <p>"This is a job search application built with React JS, allowing users to explore and search for job opportunities. 
+                        It provides an easy-to-navigate interface to filter job listings based on keywords, locations, and other relevant criteria, 
+                        helping users find jobs that match their skills and preferences efficiently."</p>
                        <a href="https://find-your-dream-job.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
                    </div>
                </div>
@@ -255,7 +257,9 @@ function App() {
                    <img src={webImage} alt="Project-2"/> 
                    <div class="project-info">
                        <h3>E-Commerce</h3>
-                       <p>Shopping Made you.</p>
+                       <p>"This e-commerce platform, built with Vite + React JS, allows users to browse and shop from a range of products with ease. 
+                        It includes a secure sign-up process with email verification, ensuring a safe and reliable user experience. 
+                        Users can explore categories, view product details, and manage their carts efficiently."</p>
                        <a href="https://e-commerce-gray-one-22.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
                    </div>
                </div>
@@ -263,7 +267,8 @@ function App() {
                    <img src={webImage} alt="Project-3"/>
                    <div class="project-info">
                        <h3>Food Munch</h3>
-                       <p>Explore the menu and order the food.</p>
+                       <p>"Food Munch is a food-ordering application where users can explore a wide range of menu items and place orders with ease. The platform provides a 
+                        user-friendly interface to browse different cuisines, view detailed descriptions, and make quick, convenient food orders from menu exploration to checkout."</p>
                        <a href="https://food-munch-restaurant.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
                    </div>
                </div>
@@ -271,23 +276,26 @@ function App() {
                    <img src={webImage} alt="Project-4"/>
                    <div class="project-info">
                        <h3>IPL Statistics</h3>
-                       <p>Check the Team Statistics.</p>
+                       <p>"This IPL statistics app provides insights into team performance, allowing users to view each team's win and loss records. 
+                        With a simple interface, users can track and compare the success of their favorite teams throughout the IPL seasons."</p>
                        <a href="https://ipl-statistics-three.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
                    </div>
                </div>
                <div class="project-card">
                    <img src={webImage} alt="Project-5"/>
                    <div class="project-info">
-                       <h3>IPLTube</h3>
-                       <p>This Wesite is similar to the YouTube but it is made for IPL.</p>
-                       <a href="https://ipl-tube-ibhub.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
+                       <h3>UTube</h3>
+                       <p>"This video platform, inspired by YouTube, offers curated content across IPL highlights, motivational videos, and games. 
+                        Users can browse categories, watch videos, and enjoy content tailored to these specific interests, providing a focused and enjoyable viewing experience."</p>
+                       <a href="https://utube-ibhub.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
                    </div>
                </div>
                <div class="project-card">
                    <img src={webImage} alt="Project-6"/>
                    <div class="project-info">
                        <h3>Files Manager</h3>
-                       <p>Save Your Files like Password, Contacts, Notes, and Todos.</p>
+                       <p>"This file manager application lets users securely save and organize various types of files, including passwords, contacts, notes, and todos. 
+                        With a user-friendly interface, it provides easy access to important information, keeping it all in one organized place."</p>
                        <a href="https://my-files-manager.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
                    </div>
                </div>
@@ -296,7 +304,6 @@ function App() {
       </section>
 
 
-  
 
       {/* <!-- Contact Section Design  --> */}
       <section class="contact" id="contact">
@@ -323,7 +330,7 @@ function App() {
                </div>
                <div class="btn-box btns">
                    <button class="btn" type="submit" value="Send">
-                       Send Message
+                       Send
                    </button>
                </div>
            </form>
