@@ -1,10 +1,13 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import { useEffect, useRef, useState } from 'react';
 import toast from "react-hot-toast";
 import emailjs from '@emailjs/browser';
 import Typed from 'typed.js';
-import webImage from './assets/webDeveloper.png';
-
+import webImage from './assets/developer.jpg';
+import aboutImg from './assets/dev.svg';
+import shop from './assets/shop.jpg';
+import job from './assets/job.jpg';
+import utube from './assets/utube.jpg';
 import './App.css';
 
 const Mail = `GTvVlcSHwsJSnqhqBDnFvscjmpqvfgXXKzxlcNCbtvwtdXpDnJqbZHxcKCnrDRJBbzhWlBHxVnvrV`
@@ -133,18 +136,17 @@ function App() {
             </span> and I am a Passionate <span id="element"></span>
           </h1>
           <p>
-            Full Stack Developer with hands-on experience in building and maintaining robust web applications...
+            Full Stack Developer with hands-on experience in building and maintaining strong web applications...
           </p>
 
           <div className="btn-box">
-            <a href={mailId} target="_blank" className="btn" rel="noreferrer">Hire Me</a>
+            {/* <a href={mailId} target="_blank" className="btn" rel="noreferrer">Hire Me</a> */}
             <a href={mailId} target="_blank" className="btn" rel="noreferrer">Let's Talk</a>
           </div>
           <div className="home-social">
-            <a href="https://github.com/UzairMohammed7" target="_blank" rel="noreferrer"> <FaGithub className="bx bxl-github" /> </a>
             <a href="https://www.linkedin.com/in/mohammed-uzair-mu/" target="_blank" rel="noreferrer" ><FaLinkedin className="bx bxl-linkedin-square" /></a>
+            <a href="https://github.com/UzairMohammed7" target="_blank" rel="noreferrer"> <FaGithub className="bx bxl-github" /> </a>
             <a href="https://x.com/uzairmohammed71" target="_blank" rel="noreferrer"><FaTwitter className="bx bxl-twitter" /></a>
-            <a href="https://www.facebook.com/uzair.mohd.37/" target="_blank" rel="noreferrer"><FaFacebookF className="bx bxl-facebook" /></a>
             <a href="https://www.instagram.com/uzair_mohammed_0_0/" target="_blank" rel="noreferrer"><FaInstagram className="bx bxl-instagram" /></a>
           </div>
         </div>
@@ -157,19 +159,21 @@ function App() {
            </h2>
 
           <div class="about-img">
-               <img src={webImage} alt="dev-image"/><span class="circle-spin"></span>
+               <img src={aboutImg} alt="dev-image" className="aboutImg "/><span class="circle-spin"></span>
            </div>
 
            <div class="about-content">
                <h3>Frontend Developer</h3>
                <p>I'm a passionate Full Stack Developer with a deep interest in building efficient, user-friendly applications
                  that solve real-world problems. With a strong foundation in both frontend and backend development, 
-                 I enjoy creating seamless experiences by bridging the gap between design and functionality. 
                  Proficient in technologies like JavaScript, React, Node.js, and various databases, 
                  I’m dedicated to writing clean, maintainable code and continuously refining my skills. 
-                 I thrive in collaborative environments and am always excited to explore new tools and technologies
+                 I do well while working in collaborative environments and am always excited to explore new tools and technologies
                  to enhance my development process and deliver impactful solutions.
                </p>
+               <div class="project-info">
+                 <a href="https://portfolio-vite-nine-pi.vercel.app" target="_blank" class="btn" rel="noreferrer">View More</a>
+              </div>
            </div>
       </section>
 
@@ -200,7 +204,7 @@ function App() {
                                <div class="bar"><span></span></div>
                            </div>
                            <div class="progress">
-                               <h3>MERN Stack <span>80%</span></h3>
+                               <h3>MERN Stack (MongoDB, Express, React, Node) <span>80%</span></h3>
                                <div class="bar"><span></span></div>
                            </div>
                        </div>
@@ -212,23 +216,23 @@ function App() {
                    <div class="skills-box">
                        <div class="skills-content">
                            <div class="progress">
-                               <h3>Web Design and Development<span>90%</span></h3>
+                               <h3>Word Press<span>90%</span></h3>
                                <div class="bar"><span></span></div>
                            </div>
                            <div class="progress">
-                               <h3>Graphic Design <span>80%</span></h3>
+                               <h3>Graphic Design<span>80%</span></h3>
                                <div class="bar"><span></span></div>
                            </div>
                            <div class="progress">
-                               <h3>MS Word, MS PP, and MS Excel <span>80%</span></h3>
+                               <h3>MS Word, PowerPoint, and Excel<span>80%</span></h3>
                                <div class="bar"><span></span></div>
                            </div>
                            <div class="progress">
-                               <h3>AutoCADD <span>90%</span></h3>
+                               <h3>AutoCADD<span>90%</span></h3>
                                <div class="bar"><span></span></div>
                            </div>
                            <div class="progress">
-                               <h3>Revit Architecture <span>70%</span></h3>
+                               <h3>Revit Architecture<span>70%</span></h3>
                                <div class="bar"><span></span></div>
                            </div>
                        </div>
@@ -244,61 +248,70 @@ function App() {
            <h1 class="section-heading">Projects</h1>
            <div class="projects-container">
                <div class="project-card">
-                   <img src={webImage} alt="Project-1"/> 
-                   <div class="project-info">
-                       <h3>Your Dream job</h3>
-                       <p>"This is a job search application built with React JS, allowing users to explore and search for job opportunities. 
-                        It provides an easy-to-navigate interface to filter job listings based on keywords, locations, and other relevant criteria, 
-                        helping users find jobs that match their skills and preferences efficiently."</p>
-                       <a href="https://find-your-dream-job.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
-                   </div>
-               </div>
-               <div class="project-card">
-                   <img src={webImage} alt="Project-2"/> 
+                   <img src={shop} alt="Project-2"/> 
                    <div class="project-info">
                        <h3>E-Commerce</h3>
                        <p>"This e-commerce platform, built with Vite + React JS, allows users to browse and shop from a range of products with ease. 
                         It includes a secure sign-up process with email verification, ensuring a safe and reliable user experience. 
-                        Users can explore categories, view product details, and manage their carts efficiently."</p>
+                        Users can explore categories, view product details, and manage their carts efficiently." <br /> <span>Note:- SignUp using your email</span></p>
+                        <div className="technologies">
+                          <h3>Technologies</h3>
+                          <div>
+                            <p>React.js</p>
+                            <p>TailwindCSS</p>
+                            <p>MongoDB</p>
+                            <p>Node</p>
+                            <p>Express</p>
+                          </div>
+                        </div>
                        <a href="https://e-commerce-gray-one-22.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
                    </div>
                </div>
                <div class="project-card">
-                   <img src={webImage} alt="Project-3"/>
+                   <img src={job} alt="Project-1"/> 
                    <div class="project-info">
-                       <h3>Food Munch</h3>
-                       <p>"Food Munch is a food-ordering application where users can explore a wide range of menu items and place orders with ease. The platform provides a 
-                        user-friendly interface to browse different cuisines, view detailed descriptions, and make quick, convenient food orders from menu exploration to checkout."</p>
-                       <a href="https://food-munch-restaurant.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
+                       <h3>Your Dream job</h3>
+                       <p>"This is a job search application built with React JS, allowing users to explore and search for job opportunities. 
+                        It provides an easy-to-navigate interface to filter job listings based on keywords, locations, and other relevant criteria, 
+                        helping users find jobs that match their skills and preferences efficiently." <br /> <span>Note:- Username: rahul, Password: rahul@2021</span></p>
+                        <div className="technologies">
+                          <h3>Technologies</h3>
+                          <div>
+                            <p>React.js</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>MongoDB</p>
+                            <p>NodeJS</p>
+                            <p>ExpressJS</p>
+                          </div>
+                        </div>
+                       <a href="https://find-your-dream-job.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
                    </div>
-               </div>
+               </div>          
                <div class="project-card">
-                   <img src={webImage} alt="Project-4"/>
-                   <div class="project-info">
-                       <h3>IPL Statistics</h3>
-                       <p>"This IPL statistics app provides insights into team performance, allowing users to view each team's win and loss records. 
-                        With a simple interface, users can track and compare the success of their favorite teams throughout the IPL seasons."</p>
-                       <a href="https://ipl-statistics-three.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
-                   </div>
-               </div>
-               <div class="project-card">
-                   <img src={webImage} alt="Project-5"/>
+                   <img src={utube} alt="Project-5"/>
                    <div class="project-info">
                        <h3>UTube</h3>
-                       <p>"This video platform, inspired by YouTube, offers curated content across IPL highlights, motivational videos, and games. 
-                        Users can browse categories, watch videos, and enjoy content tailored to these specific interests, providing a focused and enjoyable viewing experience."</p>
+                       <p>"This video platform, inspired by YouTube, offers curated content across IPL insides, motivational videos, and games. 
+                        Users can browse categories, watch videos, and enjoy content tailored to these specific interests, providing a focused and enjoyable viewing experience."
+                        <br /> <span>Note:- Username: rahul, Password: rahul@2021</span></p>
+                        <div className="technologies">
+                          <h3>Technologies</h3>
+                          <div>
+                            <p>React.js</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>MongoDB</p>
+                            <p>NodeJS</p>
+                            <p>ExpressJS</p>
+                          </div>
+                        </div>
                        <a href="https://utube-ibhub.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
                    </div>
-               </div>
-               <div class="project-card">
-                   <img src={webImage} alt="Project-6"/>
-                   <div class="project-info">
-                       <h3>Files Manager</h3>
-                       <p>"This file manager application lets users securely save and organize various types of files, including passwords, contacts, notes, and todos. 
-                        With a user-friendly interface, it provides easy access to important information, keeping it all in one organized place."</p>
-                       <a href="https://my-files-manager.vercel.app" target="_blank" class="btn" rel="noreferrer">View Project</a>
-                   </div>
-               </div>
+               </div>            
+           </div>
+           <div class="project-info">
+              <a href="https://portfolio-vite-nine-pi.vercel.app" target="_blank" class="btn" rel="noreferrer">More Projects</a>
            </div>
            </div>
       </section>
@@ -311,12 +324,12 @@ function App() {
            <form ref={form} onSubmit={sendEmail}>
                <div class="input-box">
                    <div class="input-field">
-                       <input type="text" name='from_name' placeholder="Your Name"
+                       <input type="text" name='from_name' placeholder="Enter Your Name"
                         value={name} onChange={(e) => setName(e.target.value)} required/>
                        <span class="focus"></span>
                    </div>
                    <div class="input-field">
-                       <input type="text" name='from_email' placeholder="Your Email"
+                       <input type="text" name='from_email' placeholder="Enter Your Email"
                         value={email} onChange={(e) => setEmail(e.target.value)} 
                         required/>
                        <span class="focus"></span>
@@ -324,7 +337,7 @@ function App() {
                </div>
 
                <div class="textarea-field">
-                   <textarea name="message" id="" cols="30" rows="10"  placeholder="Your Message"
+                   <textarea name="message" id="" cols="30" rows="10"  placeholder="I’d love to hear from you! Send Your thoughts..."
                    value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                    <span class="focus"></span>
                </div>

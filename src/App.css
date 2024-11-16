@@ -213,6 +213,8 @@ section {
     transition: 3s;
     background: transparent;
     margin-left: 10%;
+    border-radius: 200px;
+    height: 400px;
 }
 
 .home-imgHover:hover {
@@ -257,7 +259,6 @@ span {
     border: 3px solid var(--main-color);
     width: 90%;
     border-radius: 50%;
-
 }
 
 .about-img .circle-spin {
@@ -274,7 +275,22 @@ span {
     border-right: .2rem solid var(--main-color);
     animation: aboutSpinner 4s infinite forwards;
 }
-
+.aboutImg{
+    height: 220px;
+    width: 200px;
+}
+@media (max-width: 767px) {
+    .aboutImg{
+        height: 200px;
+        width: 150px;
+    }
+}
+@media (max-width: 567px) {
+    .aboutImg{
+        height: 180px;
+        width: 150px;
+    }
+}
 .about-content {
     text-align: center;
 }
@@ -358,6 +374,7 @@ span {
     border-radius: .5rem;
     text-decoration: none;
     transition: .3s;
+    margin-top: 5px;
 }
 
 .project-info .btn:hover {
@@ -365,6 +382,21 @@ span {
     color: var(--main-color);
 }
 
+.project-info span{
+    color: rgb(0, 195, 255);
+}
+.technologies div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.technologies p{
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
 @media (max-width: 767px) {
     .projects-container {
         flex-direction: column;
